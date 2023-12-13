@@ -1,0 +1,501 @@
+/* Resetta il margin e padding del body */
+body {
+    margin: 0;
+    padding: 0;
+  }
+  
+  /* Stile per l'header */
+  header {
+    position: fixed;
+    top: 25px;
+    left: 0;
+    right: 0;
+    max-width: 900px; 
+    margin: 0 auto;
+    height: 60px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: linear-gradient(180deg, rgba(255, 255, 255, 0.70) 0%, rgba(255, 255, 255, 0.70) 100%);
+    border-radius: 10px;
+    box-shadow: 0px 4px 29px 3px rgba(0, 0, 0, 0.25);
+    backdrop-filter: blur(10px);
+    z-index: 99;
+  }
+  
+  /* Stile per il container del menu */
+  
+  /* Stile per il logo */
+  .containermenu img {
+    width: 120px;
+    height: auto;
+    margin-right: 40px;
+  }
+  
+  /* Stile per la lista del menu */
+  .vocimenu ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+  }
+  
+  /* Stile per i singoli elementi del menu */
+  .vocimenu li {
+    margin: 0 30px;
+  }
+  
+  /* Stile per i link nel menu */
+  .vocimenu a {
+    text-decoration: none;
+    color: #000;
+    font-family: Helvetica, sans-serif;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+  }
+
+  /* Stile per i link nel menu */
+.vocimenu a {
+    text-decoration: none;
+    color: #000;
+    font-family: Helvetica, sans-serif;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    position: relative;
+  }
+  
+/* Stile per i link nel menu */
+.vocimenu a {
+    text-decoration: none;
+    color: #000;
+    font-family: Helvetica, sans-serif;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    position: relative;
+    transition: transform 0.3s;
+  }
+  
+  /* Effetto di animazione al passaggio del mouse */
+  .vocimenu a::before {
+    content: "";
+    position: absolute;
+    bottom: -5px; /* Sposta l'elemento sottolineato al di sotto del testo */
+    left: 0;
+    width: 100%;
+    height: 2px; /* Altezza della sottolineatura */
+    background-color: #000; /* Colore della sottolineatura */
+    transform: scaleX(0); /* Inizialmente nascosta */
+    transform-origin: right;
+    transition: transform 0.3s;
+    transition-timing-function: ease-in-out;
+  }
+  
+  /* Animazione al passaggio del mouse */
+  .vocimenu a:hover::before {
+    transform: scaleX(1); /* Rivelare la sottolineatura */
+    transform-origin: left;
+  }
+  
+  /* Resetta l'animazione quando il mouse viene tolto */
+  .vocimenu a::before {
+    transition: transform 0.3s;
+    transform-origin: right;
+  }
+  
+
+  #backgroundVideo {
+    width: 100%;
+    height: auto;
+    margin: 0px;
+    padding: 0px;
+    z-index: 0;
+  }
+  
+  .iniziotesto {
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+    grid-template-rows: repeat(5, 1fr);
+    grid-column-gap: 30px;
+    }
+    
+    .inizio1 {
+        grid-area: 2 / 4 / 3 / 10;
+        text-align: center;
+        margin: 0px;
+        margin-bottom: 0px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }   
+
+    .inizio2 {
+        grid-area: 3 / 4 / 5 / 7;
+    }
+    .inizio3 { grid-area: 3 / 7 / 5 / 11; }
+
+  h2 {
+    color: #000;
+    font-family: Helvetica;
+    font-size: 108px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 0px;
+  }
+
+  p {
+    color: #000;
+    font-family: Helvetica;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+  }
+
+  h3{
+    color: #000;
+    font-family: Helvetica;
+    font-size: 100px;
+    font-style: normal;
+    font-weight: 300;
+    line-height: 0;
+    margin-top: 60px;
+  }
+
+  .coloretext{
+    color: #E13B1A;
+    font-family: Helvetica;
+    font-size: 100px;
+    font-style: normal;
+    font-weight: 400;
+  }
+
+  .coloretext2{
+    color: #E13B1A;
+    font-family: Helvetica;
+    font-size: 100px;
+    font-style: normal;
+    font-weight: 400;
+    float: right;
+    margin-right: 50px;
+  }
+
+  .immaginesezione img {
+    width: 100%;
+    height: auto;;
+  }
+
+  .testoimmagine {
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+    grid-template-rows: repeat(6, 1fr);
+    grid-column-gap: 30px;
+    grid-row-gap: 30px;
+    padding-top: 7%;
+    padding-bottom: 5%;
+    }
+    
+    .testoimmagine1 {
+        grid-area: 1 / 6 / 2 / 9;
+    }
+    .testoimmagine2 {
+        grid-area: 2 / 4 / 3 / 8;
+        margin-bottom: 0px;
+        padding-bottom: 0px;
+    }
+    .testoimmagine3 {
+        grid-area: 2 / 8 / 5 / 12;
+    }
+    .testoimmagine4 {
+        grid-area: 3 / 2 / 6 / 8;
+    }
+
+    .testotestoimmagine {
+        color: #000;
+        font-family: Helvetica;
+        font-size: 108px;
+        font-style: normal;
+        font-weight: 700;
+        line-height: 0px;
+        margin-bottom: 0px;
+        text-align: center;
+    }
+
+    .testotestoimmagine2 {
+        color: #000;
+        font-family: Helvetica;
+        font-size: 108px;
+        font-style: normal;
+        font-weight: 700;
+        line-height: 0px;
+        margin-top: 50px;
+        text-align: right;
+        margin-right: 50px;
+        margin-bottom: 0px;
+        padding-bottom: 0px;
+    }
+
+    .testoimmagine3 p{
+        margin-top: 0px;
+
+    }
+
+    .secondaimmagine{
+        width: 95%;
+        height: auto;
+        margin-right: 50px;
+      }
+
+    .h2modificato {
+        color: #000;
+        font-family: Helvetica;
+        font-size: 108px;
+        font-style: normal;
+        font-weight: 700;
+        line-height: 0px;
+        margin-bottom: 0px;
+        text-align: center;
+    }
+
+    .widthparagrafo {
+        width: 600px;
+    }
+
+    .footer {
+        display: grid;
+        grid-template-columns: repeat(12, 1fr);
+        grid-template-rows: 1fr;
+        grid-column-gap: 30px;
+        grid-row-gap: 0px;
+        background-color: #e13b1a;
+        align-items: center;
+        height: 70px;
+        margin-top: -10px;
+        padding-left: 30px;
+        padding-right: 30px;
+        }
+        
+        .footer1 {
+            grid-area: 1 / 1 / 2 / 2;
+        }
+        .footer2 {
+            grid-area: 1 / 2 / 2 / 5;
+        }
+        .footer3 {
+            grid-area: 1 / 10 / 2 / 13;
+        }
+
+    .footer p{
+        color: #FFF;
+        font-family: Helvetica;
+        font-size: 15px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: normal;
+    }
+    .brclass {
+        visibility: none;
+    }
+    .immaginesezione2 img {
+        width: 100%;
+        height: auto;
+        margin-bottom: -4px;
+      }
+
+    .backgroundimage2{
+        display: none;
+        margin-bottom: -40px;
+    }
+
+    @media (min-width: 765px){
+    .iniziomobile {
+        display: none;}
+    .h2mobile {
+        display: none;
+    }
+    .footer6, .footerlink1 {
+        display: none;
+    }
+    .linkfooter {
+        color: #ffffff;
+    }
+    }
+
+
+   /* RESPONSIVE*/
+   @media (max-width: 765px){
+    .containermenu {
+        display: none;
+    }
+    .vocimenu a {
+        text-decoration: none;
+        color: #000;
+        font-family: Helvetica, sans-serif;
+        font-size: 15px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: normal;
+    }
+    .vocimenu li {
+        margin: 0 16px;
+    }
+    header {
+        position: fixed;
+        top: 25px;
+        left: 0;
+        right: 0;
+        max-width: 450px; 
+        margin: 0 auto;
+        height: 70px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        background: linear-gradient(180deg, rgba(255, 255, 255, 0.70) 0%, rgba(255, 255, 255, 0.70) 100%);
+        border-radius: 10px;
+        box-shadow: 0px 4px 29px 3px rgba(0, 0, 0, 0.25);
+        backdrop-filter: blur(10px);
+        z-index: 99;
+    }
+    #backgroundVideo {
+        width: 100%;
+        height: 100vh;
+        margin: 0px;
+        padding: 0px;
+        z-index: 0;
+        object-fit: cover;
+        text-align: center;
+        justify-content: center;
+    }
+    .iniziotesto, .testoimmagine {
+        display: block; 
+        text-align: left;
+        margin: 0;
+        padding-left: 30px;
+        padding-right: 30px;
+        padding-top: 70px;
+    }
+    
+    .inizio1 {
+        text-align: left;
+        margin: 0;
+        margin-bottom: 0;
+        display: flex;
+        justify-content: left;
+        align-items: left;
+    }
+    
+    .inizio2 {
+        text-align: left;
+    }
+    
+    .inizio3 {
+        text-align: left;
+    }
+    h2 {
+        font-size: 50px;
+        margin: 0px;
+    }
+    .h2mobile{
+        padding-top: 40px;
+        font-size: 50px;
+        padding-bottom: 60px;
+    }
+    h3 {
+        font-size: 30px;
+        margin: 0px;
+        padding-top: 50px;
+        padding-bottom: 30px;
+
+    }
+    .coloretext, .coloretext2{
+        font-size: 30px;
+    }
+
+    .inizio2{
+        display: none;
+    }
+    p {
+        padding-bottom: 50px;
+    }
+    .testoimmagine1 {
+        display: none;
+    }
+    .testoimmagine2 {
+        display: none;
+    }
+
+    .immaginesezione {
+        width: 95%;
+        height: auto;
+        padding:0px;
+        margin:0px
+    }
+    .testoimmagine4 {
+        display: none;
+    }
+    .h2modificato {
+        padding-top: 50px;
+        font-size: 50px;
+        padding-bottom: 60px;
+    }
+    .widthparagrafo {
+        width: 100%;
+        padding-bottom: 30px;
+    }
+    .immaginesezione2 img{
+        padding-top: 30px;
+        width: 100%;
+    }
+    .backgroundimage {
+        margin: 0px;
+    }
+    .footer {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        height: 300px;
+        text-align: center;
+        margin: -5px auto;
+    }
+
+    .footer2 p {
+        padding-bottom: 20px;
+        font-size: 11px;
+        text-align: center;
+        margin: 0 auto;
+        padding-top: 5px;
+    }
+    .footer3 {
+        padding-top: 0px;
+        width: 400px;
+    }
+    .tag{
+        display: none;
+    }
+    .footer5 {
+        display: none;
+    }
+    .linkfooter {
+        color: #ffffff;
+    }
+    .footer6 {
+        margin: 0 auto;
+    }
+    .strong1 {
+        padding-top: 10px;
+        text-align: center;
+        margin: 0 auto;
+    }
+    .footerlink1 {
+        padding: 0px;
+        margin: 0px;
+        line-height: 0px;
+    }
+   }
+
